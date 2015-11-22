@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+    <title>Ken's Toolbox App</title>
+    <link type="text/css" rel="stylesheet" href="styles/styles.css" />
+    <link type="text/css" rel="stylesheet" href="styles/demo.css" />
+    <link type="text/css" rel="stylesheet" href="LIB/css/jquery.mmenu.css" />
+    <link type="text/css" rel="stylesheet" href="LIB/css/addons/jquery.mmenu.dragopen.css" />
+</head>
+<body>
+    <div id="page">
+        <div class="header FixedTop">
+            <a href="#menu"></a>
+           Ken's Toolbox App
+        </div>
+        <div class="content" id="content">
+            <div id="Div1">
+                <h1 class="center" style="text-decoration: underline;">Ken's Toolbox</h1>
+                <p>
+                    <img src="images/tools-icon-sm.png" />Ken's Toolbox is the swiss army knife of mobile apps. It features a flashlight to light your way at night,
+                    a camera to snap photos where ever you go, and a screen where you can see all your network info to stay connected.
+                </p>
+                <h4>About Ken</h4>
+                <p>Ken Petersen is a professional web and mobile app developer. Ken resides in upstate New York and enjoys all
+                    things tech, flying general aviation airplanes and riding motorcycles.
+                </p>
+                <h5>Contact Info</h5>
+                <p>Email: <a href="mailto:k-petersen4@hvcc.edu">k-petersen4@hvcc.edu</a></p>
+            </div>
+            <div id="Div2" class="hiddenDiv">
+                <h1 class="center" style="text-decoration: underline;">Use the Flashlight Below to Light Your Way</h1>
+                <img src="images/flashlight-icon-sm.png" /> <p>Ken's flashlight is like having daylight in a can 
+                    and it's exactly what you need when you need to find your way in the dark. With a simple tap of the button below you will be on your way, where ever
+                    you need to go!</p>
+                <h4>Tap Here to Turn the Flashlight On or Off</h4>
+                <div id="DivFlashlight">
+                     <input type="button" id="btnToggleLight" value="Turn Light ON" />
+                </div>
+            </div>
+            <div id="Div3" class="hiddenDiv">
+                <h1 class="center" style="text-decoration: underline;">Capture A Photo!</h1>
+                    <img src="images/camera-icon-sm.png" /><p>Ken's image capture app allows you to capture photos while on the go.
+                    Use the button below to capture any image you want!</p>
+                    <div id="DivCapture">
+                        <input type="button" id="btnImage" value="Capture Image" />
+                    </div>
+                <div id="DivOutput">
+
+                </div>
+            </div>
+            <div id="Div4" class="hiddenDiv">
+                <h1 class="center" style="text-decoration: underline;">Your Network Info</h1>
+                    <img src="images/network-icon-sm.png" /><p>Use Ken's Network App to show how your device is connected to the Internet!
+                    Whether via Wifi or cellular it's important to be sure you know how your device is connected to protect your data plan.</p>
+                    <p>
+                        Use the button below to show your connection type.
+                    </p>
+                    <div id="DivNetwork">
+                        <input type="button" id="btnNetwork" value="Show Network Info" onclick="checkConnection();" />
+                    </div>
+            </div>
+        </div>
+       <div class="footer FixedBottom">
+            Copyright &#169; 2015. Ken's Toolbox App. All Rights Reserved.
+        </div>
+        <nav id="menu">
+            <ul>
+                <br />
+                <li><a href="#1">Ken's Toolbox - Home</a></li>
+                <li><a href="#2">Ken's Flashlight</a></li>
+                <li><a href="#3">Ken's Image Capture</a></li>
+                <li><a href="#4">Ken's Network Info</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script type="text/javascript" src="scripts/hammer.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="LIB/js/jquery.mmenu.min.js"></script>
+    <script type="text/javascript" src="LIB/js/addons/jquery.mmenu.dragopen.min.js"></script>
+    <script type="text/javascript" src="LIB/js/addons/jquery.mmenu.fixedelements.min.js"></script>
+    <script type="text/javascript" src="phonegap.js"></script>
+    <script type="text/javascript" src="scripts/Flashlight.js"></script>
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+</body>
+</html>

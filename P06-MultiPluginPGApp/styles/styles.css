@@ -1,0 +1,63 @@
+﻿body {
+    background-color:white;
+    margin: 0 auto;
+    /*text-align: center;*/
+    top: 60%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+#DivContainer {
+    background-color: #ededed;
+    width: 90%;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#splash img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    margin-top: 15%;
+    text-align: center;
+    
+}
+
+input[type=button] {
+    border: 4px solid black;
+    color: black;
+    background-color: silver;
+    font-size: 26px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+    input[type=button]:hover {
+        color: white;
+        background-color: black;
+    }
+
+    input[type=button]:active {
+        color: yellow;
+        background-color: black;
+    }
+
+#DivCapture {
+    display: none;
+}
+
+#DivNetwork {
+    display: none;
+}
+
+.center {text-align: center;}
